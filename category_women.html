@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=1024">
+        <title>No Mad Gear</title>
+        <link href="assets/img/favicon.png" rel="icon">
+        <link href="assets/vendor/fontawesome_pro_v5.13/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/main_categories.css" rel="stylesheet">
+        <link href="assets/css/cat_women.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Kalam&family=Itim&family=Epilogue:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="pre_load()">
+        <div id="preloader"></div>
+        <div class="main_content_animation" id="main_content">
+            <header class="header_main">
+                <div class="header_limiter">
+                    <img src="assets/img/icon.png">
+                    <h1><i class="far fa-crown"></i>No Mad Gear</h1>
+                    <form id="form_search" action="javascript:void(0)" onsubmit="disp_search()" onmouseleave="clr_search()">
+                        <input type="search" id="search_field" placeholder="Search Here Bro">
+                        <i onclick="disp_search()" class="fa fa-search"></i>
+                    </form>
+                </div>
+            </header>
+            <span class="sidebar" onclick="openNav()"><i class="far fa-bars"></i></span>
+            <div id="Sidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="far fa-times"></i></a>
+                <img src="assets/img/admin_pic.png">
+                <i id="premium" class="far fa-crown"></i>
+                <h2>Hi, Hritvik</h2>
+                <h3>Premium Member</h3>
+                <div id="fade1"><hr class="fade"></div>
+                <a href="index.html"><i id="sidebar_icon" class="fal fa-home"></i>&nbsp;Home</a>
+                <a href="category_men.html"><i id="sidebar_icon" class="fal fa-male"></i>&nbsp;Men's Clothing</a>
+                <a href="#"><i id="sidebar_icon" class="fal fa-female"></i>&nbsp;<span class="active">Women's Clothing</span></a>
+                <a href="category_kids.html"><i id="sidebar_icon" class="fal fa-child"></i>&nbsp;Kids</a>
+                <a href="category_baby.html"><i id="sidebar_icon" class="fal fa-baby"></i>&nbsp;Baby</a>
+                <a href="contact.html"><i id="sidebar_icon" class="fal fa-phone"></i>&nbsp;Contact</a>
+                <a href="about_us.html"><i id="sidebar_icon" class="fal fa-user-friends"></i>&nbsp;About Us</a>
+                <div id="fade2"><hr class="fade"></div>
+                <a href="javascript:void(0)"><i id="sidebar_icon" class="fal fa-user-cog"></i>&nbsp;Account Settings</a>
+                <a href="javascript:void(0)"><i id="sidebar_icon" class="fal fa-sign-out-alt"></i>&nbsp;Log Out</a>
+                <p>#designed by hritvik&nbsp;&nbsp;&nbsp;v1.2</p>
+            </div>
+            <section id="main" class="main"><br>
+                <h1 id="sec_head">Women's Fashion</h1>
+                <div class="cards_main_sec">
+                    <div class="card_main card1">
+                        <nav>
+                          <span>#</span>latest fashion <span>#</span>super quality <span>#</span>high range
+                          <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                        </nav>
+                        <div class="photo">
+                          <img src="assets/img/categories/cat_women/card1_main.jpg">
+                        </div>
+                        <div class="description">
+                          <h2>Strappy Jumpsuit</h2>
+                          <h4>Navy</h4>
+                          <h1><i class="far fa-rupee-sign"></i>&nbsp;2200</h1>
+                          <p>Give your summer look a delightful update with this navy belted jumpsuit. Tailored in flowy floral georgette, it features a strappy neck with a self-fabric belt.</p>
+                          <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                          <button  onclick="modal_card1_open()"><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                        </div>
+                    </div>
+                    <div class="card_main card2">
+                        <nav>
+                          <span>#</span>premium product <span>#</span>just arrived <span>#</span>high range
+                          <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                        </nav>
+                        <div class="photo">
+                          <img src="assets/img/categories/cat_women/card2_main.jpg">
+                        </div>
+                        <div class="description">
+                          <h2>Embellished Jumpsuit</h2>
+                          <h4>Green</h4>
+                          <h1><i class="far fa-rupee-sign"></i>&nbsp;<del>2400</del>&nbsp;1400</h1>
+                          <p>Tailored in a stunning green shade, it features embellishments on the straps for that extra sparkle and shine.</p>
+                          <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                          <button onclick="modal_card2_open()"><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                        </div>
+                    </div>
+                    <div class="card_main card3">
+                        <h3 id="out_msg">Out Of Stock</h3>
+                        <div class="out_stock">
+                          <nav>
+                            <span>#</span>super quality <span>#</span>high demand <span>#</span>mid range
+                            <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                          </nav>
+                          <div class="photo">
+                            <img src="assets/img/categories/cat_women/card3_main.jpg">
+                          </div>
+                          <div class="description">
+                            <h2>Knotted Jumpsuit</h2>
+                            <h4>Navy</h4>
+                            <h1><i class="far fa-rupee-sign"></i>&nbsp;1999</h1>
+                            <p>Look elegantly dressed by slipping into this blue striped dress that has a knotted front. Featuring all over print and a knotted front.</p>
+                            <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                            <button><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card_main card4">
+                        <nav>
+                          <span>#</span>latest trends <span>#</span>fashion <span>#</span>mid range
+                          <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                        </nav>
+                        <div class="photo">
+                          <img src="assets/img/categories/cat_women/card4_main.jpg">
+                        </div>
+                        <div class="description">
+                          <h2>Strappy Jumpsuit</h2>
+                          <h4>Grey</h4>
+                          <h1><i class="far fa-rupee-sign"></i>&nbsp;1899</h1>
+                          <p>Give your summer look a charming update with this grey belted jumpsuit. Tailored in flowy floral georgette, it features a strappy neck with a self-fabric belt.</p>
+                          <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                          <button  onclick="modal_card3_open()"><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                        </div>
+                      </div>
+                    <div class="card_main card5">
+                        <h3 id="out_msg">Out Of Stock</h3>
+                        <div class="out_stock">
+                          <nav>
+                            <span>#</span>premium product <span>#</span>high range <span>#</span>quality product
+                            <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                          </nav>
+                          <div class="photo">
+                            <img src="assets/img/categories/cat_women/card5_main.jpg">
+                          </div>
+                          <div class="description">
+                            <h2>Strappy Jumpsuit</h2>
+                            <h4>Mustard</h4>
+                            <h1><i class="far fa-rupee-sign"></i>&nbsp;<del>2200</del>&nbsp;1100</h1>
+                            <p>Give your summer look a charming and delightful update with this mustard belted jumpsuit. It also features with a strappy neck.</p>
+                            <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                            <button><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card_main card6">
+                        <h3 id="out_msg">More Are On The Way....&nbsp;&nbsp;<i id="truck" class="fal fa-truck-container"></i>&nbsp;<i id="truck" class="fal fa-truck-container"></i></h3>
+                        <div class="out_stock">
+                          <nav>
+                            <span>#</span>
+                            <i onclick="color_chg()" id="like" class="fas fa-heart"></i>
+                          </nav>
+                          <div class="photo">
+                            <img src="assets/img/ques_mark_pic.png">
+                          </div>
+                          <div class="description">
+                            <h2>------------</h2>
+                            <h4>-----</h4>
+                            <h1><i class="far fa-rupee-sign"></i>&nbsp;-----</h1>
+                            <p>-----------------------</p>
+                            <button><i class="fal fa-cart-arrow-down"></i>&nbsp;Add to Cart</button>
+                            <button><i class="fal fa-info-circle"></i>&nbsp;Details</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <h2><i class="far fa-crown"></i>&nbsp;<span>No Mad Gear</span> © 2020. All Rights Reserved.</h2>
+            </footer>
+        </div>
+        <div id="modal_card1" class="modal_main modal1">
+            <div class="modal_content animate">
+              <span onclick="modal_card1_close()" class="close" title="Close">&times;</span>
+              <h1 id="heading_main">Product Details</h1>
+              <img class="img1" src="assets/img/categories/cat_women/card1_1.jpg">
+              <img class="img2" src="assets/img/categories/cat_women/card1_2.jpg">
+              <img class="img3" src="assets/img/categories/cat_women/card1_3.jpg">
+              <h2 id="product_name">Floral Belted Strappy Jumpsuit<br><span>Navy</span></h2>
+              <i id="rating1" class="fas fa-star"></i>
+              <i id="rating2" class="fas fa-star"></i>
+              <i id="rating3" class="fas fa-star"></i>
+              <i id="rating4" class="fas fa-star"></i>
+              <i id="rating5" class="fas fa-star-half"></i>
+              <h2 id="price"><i class="far fa-rupee-sign"></i>&nbsp;2200</h2>
+              <h2 id="quality_tag"><span>#</span>super quality&nbsp;&nbsp;<span>#</span>latest fashion&nbsp;&nbsp;<span>#</span>high range</h2>
+              <h3 id="list_left_head">Highlights</h3>
+              <h4 id="list_left_1"><span id="imp">Material</span>: Georgette</h4>
+              <h4 id="list_left_2"><span id="imp">Sleeves</span>: Sleeveless</h4>
+              <h4 id="list_left_3"><span id="imp">Country Of Origin</span>: India</h4>
+              <h4 id="list_left_4"><span id="imp">Length</span>: 52 Inches</h4>
+              <h3 id="list_right_head">Services</h3>
+              <h4 id="list_right_1">20 Day Return Policy</h4>
+              <h4 id="list_right_2">Cash on Delivery available</h4>
+              <h3 id="pincode_p">Check delivery, payment options and charges at your location</h3>
+              <form action="javascript:void(0)" id="form_pin_1" onsubmit="validate_pin_1()">
+                <input type="number" id="pincode1" placeholder="Enter Area Pincode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "6">
+                <input type="submit" class="pin_check" value="Check">
+              </form>
+              <button id="cart_btn"><i class="far fa-cart-arrow-down"></i>&nbsp;Add To Cart</button>
+              <button id="buy_btn"><i class="far fa-shopping-bag"></i>&nbsp;Buy Now</button>
+            </div>
+        </div>
+        <div id="modal_card2" class="modal_main modal2">
+            <div class="modal_content animate">
+              <span onclick="modal_card2_close()" class="close" title="Close">&times;</span>
+              <i id="premium_icon" class="far fa-crown"></i>
+              <h1 id="heading_main">Product Details</h1>
+              <img class="img1" src="assets/img/categories/cat_women/card2_1.jpg">
+              <img class="img2" src="assets/img/categories/cat_women/card2_2.jpg">
+              <img class="img3" src="assets/img/categories/cat_women/card2_3.jpg">
+              <h2 id="product_name">Embellished Strappy Jumpsuit<br><span>Green</span></h2>
+              <i id="rating1" class="fas fa-star"></i>
+              <i id="rating2" class="fas fa-star"></i>
+              <i id="rating3" class="fas fa-star"></i>
+              <i id="rating4" class="fas fa-star"></i>
+              <i id="rating5" class="fas fa-star"></i>
+              <h2 id="price"><i class="far fa-rupee-sign"></i>&nbsp;<del>2400</del>&nbsp;1400&nbsp;<span>(40% Off)</span></h2>
+              <h2 id="quality_tag"><span>#</span>awesome quality&nbsp;&nbsp;<span>#</span>premium product&nbsp;&nbsp;<span>#</span>high range</h2>
+              <h3 id="list_left_head">Highlights</h3>
+              <h4 id="list_left_1"><span id="imp">Material</span>: Crepe</h4>
+              <h4 id="list_left_2"><span id="imp">Sleeves</span>: Sleeveless</h4>
+              <h4 id="list_left_3"><span id="imp">Country Of Origin</span>: India</h4>
+              <h4 id="list_left_4"><span id="imp">Length</span>: 52 Inches</h4>
+              <h3 id="list_right_head">Services</h3>
+              <h4 id="list_right_1">10 Day Return Policy</h4>
+              <h4 id="list_right_2">Cash on Delivery not available</h4>
+              <h3 id="pincode_p">Check delivery, payment options and charges at your location</h3>
+              <form action="javascript:void(0)" id="form_pin_2" onsubmit="validate_pin_2()">
+                <input type="number" id="pincode2" placeholder="Enter Area Pincode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "6">
+                <input type="submit" class="pin_check" value="Check">
+              </form>
+              <button id="cart_btn"><i class="far fa-cart-arrow-down"></i>&nbsp;Add To Cart</button>
+              <button id="buy_btn"><i class="far fa-shopping-bag"></i>&nbsp;Buy Now</button>
+              <h3 id="info">#made from scratch by ~hritvik~</h3>
+            </div>
+        </div>
+        <div id="modal_card3" class="modal_main modal3">
+            <div class="modal_content animate">
+              <span onclick="modal_card3_close()" class="close" title="Close">&times;</span>
+              <h1 id="heading_main">Product Details</h1>
+              <img class="img1" src="assets/img/categories/cat_women/card4_1.jpg">
+              <img class="img2" src="assets/img/categories/cat_women/card4_2.jpg">
+              <img class="img3" src="assets/img/categories/cat_women/card4_3.jpg">
+              <h2 id="product_name">Floral Belted Strappy Jumpsuit<br><span>Grey</span></h2>
+              <i id="rating1" class="fas fa-star"></i>
+              <i id="rating2" class="fas fa-star"></i>
+              <i id="rating3" class="fas fa-star"></i>
+              <i id="rating4" class="fas fa-star"></i>
+              <h2 id="price"><i class="far fa-rupee-sign"></i>&nbsp;1899</h2>
+              <h2 id="quality_tag"><span>#</span>mid range&nbsp;&nbsp;<span>#</span>latest trends&nbsp;&nbsp;<span>#</span>fashion</h2>
+              <h3 id="list_left_head">Highlights</h3>
+              <h4 id="list_left_1"><span id="imp">Material</span>: Georgette</h4>
+              <h4 id="list_left_2"><span id="imp">Sleeves</span>: Sleeveless</h4>
+              <h4 id="list_left_3"><span id="imp">Country Of Origin</span>: India</h4>
+              <h4 id="list_left_4"><span id="imp">Length</span>: 52 Inches</h4>
+              <h3 id="list_right_head">Services</h3>
+              <h4 id="list_right_1">30 Day Return Policy</h4>
+              <h4 id="list_right_2">Cash on Delivery available</h4>
+              <h3 id="pincode_p">Check delivery, payment options and charges at your location</h3>
+              <form action="javascript:void(0)" id="form_pin_3" onsubmit="validate_pin_3()">
+                <input type="number" id="pincode3" placeholder="Enter Area Pincode" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "6">
+                <input type="submit" class="pin_check" value="Check">
+              </form>
+              <button id="cart_btn"><i class="far fa-cart-arrow-down"></i>&nbsp;Add To Cart</button>
+              <button id="buy_btn"><i class="far fa-shopping-bag"></i>&nbsp;Buy Now</button>
+            </div>
+        </div>
+        <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+        <script src="assets/js/main_category.js"></script>
+    </body>
+</html>
